@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
-import { RedditAppComponent} from './reddit-app.component'
+import { RedditAppComponent} from './reddit-app.component';
 
 @Component({
   selector: 'my-app',
+  directives:[RedditAppComponent],
   
   template: `
   <reddit></reddit>
   
-  `,
-  directives:[RedditAppComponent]
+  `
+  
 
   
 })
