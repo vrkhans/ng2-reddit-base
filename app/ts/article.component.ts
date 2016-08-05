@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Article } from './article';
 
 @Component({
    
@@ -48,21 +49,19 @@ import { Component } from '@angular/core';
 
 export class ArticleComponent {
 
-    votes: number;
-    title: string;
-    link: string;
+    article: Article;
 
     constructor(){
-        this.title = 'Angular2';
-        this.link = 'http://angular.io';
-        this.votes = 10;
+        this.article = new Article('Angular 2', 'http://angular.io', 10);
     }
 
-    voteUp(){
-        this.votes +=1;
+    voteUp():boolean{
+        this.article.votes +=1;
+        return false;
     }
 
-    voteDown(){
-         this.votes -=1;
+    voteDown():boolean{
+         this.article.votes -=1;
+         return false;
     }
 }

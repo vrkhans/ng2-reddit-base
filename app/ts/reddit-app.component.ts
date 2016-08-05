@@ -28,7 +28,7 @@ import { ArticleComponent} from './article.component';
              <div class="ui grid posts">
                    
                  <reddit-article> ArticleComponent Loading...</reddit-article>
-
+                 
              </div>
     `
      
