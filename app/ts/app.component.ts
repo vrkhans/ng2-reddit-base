@@ -6,12 +6,10 @@ import { RedditAppComponent} from './reddit-app.component';
   directives:[RedditAppComponent],
   
   template: `
-  <reddit></reddit>
+  <reddit>Loding...</reddit>
   
   `
-  
-
-  
+   
 })
 
 export class AppComponent {
